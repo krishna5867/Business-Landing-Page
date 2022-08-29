@@ -19,6 +19,16 @@ nav{
     font-weight: 800; 
     letter-spacing: 1px;
 }
+.fa-bars{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 30px;
+    right: 30px;
+    position: absolute;
+    opacity: 0;
+
+}
+
 .nav-list li:hover{
     color: #000;
     cursor: pointer;
@@ -46,6 +56,10 @@ button:hover{
     justify-content: space-evenly;
     display: flex;
 
+}
+.left{
+    margin-top: 40px;
+    height: 390px;
 }
 .hero .left img{
     width: 350px;
@@ -75,16 +89,15 @@ input{
 }
 .input-btnn{
     margin-left: -107px;
-
 }
 .btnn{
     border: none;
     background: green;
     position: absolute;
-    margin-top: 7px;
     opacity: .6;
-
+    margin-top: 5px;
 }
+
 /* ---------connect---- */
 .connect{
     margin-top: 100px;
@@ -94,7 +107,6 @@ input{
     font-size: 23px;
 }
 .col h3{
-
     color: gray;
     margin-top: 10px;
 }
@@ -105,83 +117,83 @@ input{
     margin-bottom: 50px;
 }
 .man{
-    width: 1100px;
+    padding: 10px 130px;
+    width: 100%;
     height: 500px;
-    margin-left: 150px;
-    
+}
+.banner{
+    width: 100%;
 }
 .content .text h1{
     text-align: center;
-    margin-top: 140px;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-size: 47px;
 }
-.box1{
-    width: 360px;
-    margin-left: 190px;
-}
 .col1{
+    /* border: 3px solid blue; */
+    padding: 0px 150px;
+}
+.row{
     display: flex;
-    /* gap: 230px; */
-}
-.col1 img{
-    width: 200px;
-    margin-left: 70px;
-    margin-bottom: 40px;
-}
-.box1 p{
-    color: #000;
-}
-.box1 img{
-    width: 300px;
-    margin-left: 30px;
-    margin-bottom: 40px;
-}
-.col2 .box2{
-    margin-bottom: 120px;
-}
-.col1 .box4{
-    margin-top: 90px;
-}
-.col2 .box4{
-    margin-top: -20px;
-}
 
+}
+.box{
+    width: 40%;
+    /* border: 3px solid green; */
+    height: auto;
+    margin: 20px 80px;
+}
+.box img{
+    width: 100%;
+    /* height: 220px; */
+}
+.box p{
+    color: gray;
+}
 .box2 img{
-    height: 300px;
-    margin-top: 50px;
-    margin-left: -1px;
+    height: 280px;
+}
+.box4 h1{
+    padding-top: 30px;
 }
 /* -----------------testimoni--------- */
-.testimonial{
-    height: 500px;
-    margin-top: 50px;
+.testimonial-wrapper{
+    width: 100%;
+    height: auto;
     display: flex;
-    margin-left: -450px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+
+
 }
 .testimoni1{
-    width: 300px;
-    height: 480px;
+    margin-top: 40px;
+    width: 270px;
+    height: 550px;
 
 }
 .testimoni1 img{
-    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    gap: 300px;
 }
 
 .testimoni1 p{
+    width: 80%;
+    line-height: 20px;
     color: gray;
     margin-top: 10px;
 }
-.testimoni-btn{
-    margin-left: 50px;
-    margin-top: -40px;
+
+.testimonial-btn{
+    margin-top: 470px;
 }
 /* ----------------footer---- */
 .footer{
-    width: 1400px;
-    margin-left: -550px;
-    margin-top: 90px;
+    position: absolute;
+    width: 100%;
     background: #000;
     color: #fff;
 }
@@ -189,7 +201,8 @@ input{
     display: flex;
     border-bottom: 1px solid gray;
     margin-bottom: 40px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding: 0 20px;
 
 }
 .footer-logo img{
@@ -198,22 +211,27 @@ input{
 }
 .footer-icon{
     margin-top: 20px;
-    margin-left: 790px;
     width: 300px;
 
 }
-.footer-content{
-    justify-content: space-evenly;
+.footer{
+    max-width: 1420px;
+    margin: auto;
+}
+.footer-container{
     display: flex;
+    flex-wrap: wrap;
 }
 .frow1{
-    width: 200px;
+    width: 20%;
+    padding: 0 35px;
     margin-bottom: 40px;
 }
 .frow1 p{
+    margin-top: 0   ;
     color: gray;
     font-size: 20px;
-    line-height: 10px;
+    line-height: 20px;
 }
 h2:hover{
     transform: scaley(1.2);
@@ -222,4 +240,154 @@ h2:hover{
 .frow1 p:hover{
     color: #fff;
     cursor: pointer;
+}
+
+    /* ---------Responsive-------------------- */
+@media(max-width: 560.90px) {
+    .nav-logo{
+        position: absolute;
+        left: 30px;
+    }
+    .fa-bars{
+        opacity: 1;
+    }
+    .nav-list,.nav-btn{
+        display: none;   
+    }
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 650px;
+    }
+input{
+        order: 1;
+    }
+    .left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 0px 120px;
+        margin-top: 40px;
+
+    }
+    .hero .left img{
+        width: 500%;
+    }
+    .right{
+        align-items: center;
+        padding: 0px 80px;
+    }
+    .right h1{
+        font-size: 32px;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    .connect-text h1{
+        font-size: 32px;
+    }
+    
+    .col h1{
+        font-size: 22px;
+    }
+    .col h3{
+        font-size: 16px;
+    }
+    .banner img{
+        width: 100%;
+        height: 300px;
+        padding: 0 20px;
+    }
+    
+    .connect{
+        margin-top: 20px;
+    }
+    .content .text h1{
+        font-size: 32px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .col1{
+        padding: 0;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column-reverse;
+    }
+    .row3{
+        flex-direction: column;
+    }
+    .row4{
+        flex-direction: column;
+    }
+
+    .box{
+        padding: 0 10px;
+
+        width: 500px;
+        margin: auto;
+    }
+    .box h1{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .box img{
+        /* width: 100%; */
+        height: 300px;
+    }
+    .box1 img{
+        margin-top: 40px;
+    }
+    .box3 img{
+        margin-top: 40px;
+    }
+    .box2 img{
+        border: 3px solid red;
+        height: 500px;
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 140px;
+    }
+    .box p{
+        margin-top: 10px;
+    }
+    .box2 img{
+        height: 280px;
+    }
+    .box4 h1{
+        padding-top: 30px;
+    }
+    .testimonial-wrapper{
+        flex-direction: row;
+    }
+    .testimoni1{
+        align-items: center;
+        padding: 0 10px;
+        gap: 0;
+
+
+    }
+    .footer-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .frow1{
+        width: 10%;
+        margin-left: 40px;
+
+    }
+    .frow1 p{
+        margin-top: 30px;
+        width: 130px;
+        height: 49px;
+        margin: auto;
+        padding: 0;
+    
+    }
+
 }
