@@ -58,7 +58,7 @@ button:hover{
     background: #213a4fc0;
     justify-content: space-evenly;
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 
 
 }
@@ -71,15 +71,22 @@ button:hover{
     padding: 20px;
 }
 .hero .right {
-    width: 600px;
+    width: 550px;
     height: 250px;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     transform: translateY(36%);
 }
-.hero .right h1,p{
+.hero .right h1{
     color: #fff;
     margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 42px;
+}
+.hero .right p{
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 20px;
+
 }
 input{
     width: 400px;
@@ -273,7 +280,7 @@ h2:hover{
     .hero{
         flex-direction: column;
         align-items: center;
-        height: 800px;
+        height: 900px;
     }
 
     .left{
@@ -285,16 +292,16 @@ h2:hover{
         margin-top: 40px;
     }
     .hero .left img{
-        width: 500px;
+        width: 600px;
         height: 350px;
     }
-    .right{
+    .hero .right{
         align-items: center;
-        padding: 0px 80px;
-        margin-top: -170px;
+        padding: 0px 60px;
+        margin-top: -260px;
     }
     .right h1{
-        font-size: 32px;
+        /* font-size: 22px; */
         text-align: center;
         flex-wrap: wrap;
 
